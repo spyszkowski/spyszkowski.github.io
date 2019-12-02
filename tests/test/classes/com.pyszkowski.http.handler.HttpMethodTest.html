@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.554s</div>
+<div class="counter">5.834s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,13 +78,18 @@
 </tr>
 </thead>
 <tr>
+<td class="success">shouldServeLambdaHandler()</td>
+<td class="success">1.356s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">shouldServeNestedPath()</td>
-<td class="success">1.008s</td>
+<td class="success">1.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldServeRoot()</td>
-<td class="success">1.009s</td>
+<td class="success">1.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +99,7 @@
 </tr>
 <tr>
 <td class="success">shouldServeWithPatternPath()</td>
-<td class="success">1.528s</td>
+<td class="success">1.447s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,30 +107,36 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-11-26 15:47:22 INFO  Server:153 - Registered GET method handler on path /some/(.*)
-2019-11-26 15:47:22 INFO  Server:111 - Accepting incoming connections on port 7575
-2019-11-26 15:47:22 DEBUG Server:118 - Accepted connection from /127.0.0.1:39590
-2019-11-26 15:47:22 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:39590
+<pre>2019-12-02 08:43:35 INFO  Server:153 - Registered GET method handler on path /some/(.*)
+2019-12-02 08:43:35 INFO  Server:111 - Accepting incoming connections on port 7575
+2019-12-02 08:43:35 DEBUG Server:118 - Accepted connection from /127.0.0.1:41502
+2019-12-02 08:43:35 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:41502
 Shutting down the server.
-2019-11-26 15:47:23 INFO  Server:139 - Stopped accepting incoming connections.
-2019-11-26 15:47:23 INFO  Server:153 - Registered GET method handler on path /
-2019-11-26 15:47:23 INFO  Server:111 - Accepting incoming connections on port 7575
-2019-11-26 15:47:23 DEBUG Server:118 - Accepted connection from /127.0.0.1:39592
+2019-12-02 08:43:36 INFO  Server:139 - Stopped accepting incoming connections.
+2019-12-02 08:43:36 INFO  Server:153 - Registered GET method handler on path /
+2019-12-02 08:43:36 INFO  Server:111 - Accepting incoming connections on port 7575
+2019-12-02 08:43:36 DEBUG Server:118 - Accepted connection from /127.0.0.1:41504
 Shutting down the server.
-2019-11-26 15:47:23 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:39592
-2019-11-26 15:47:24 INFO  Server:139 - Stopped accepting incoming connections.
-2019-11-26 15:47:24 INFO  Server:153 - Registered GET method handler on path /some/(.*)/(.*)
-2019-11-26 15:47:24 INFO  Server:111 - Accepting incoming connections on port 7575
-2019-11-26 15:47:24 DEBUG Server:118 - Accepted connection from /127.0.0.1:39606
+2019-12-02 08:43:36 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:41504
+2019-12-02 08:43:37 INFO  Server:139 - Stopped accepting incoming connections.
+2019-12-02 08:43:37 INFO  Server:153 - Registered GET method handler on path /some/(.*)/(.*)
+2019-12-02 08:43:37 INFO  Server:111 - Accepting incoming connections on port 7575
+2019-12-02 08:43:37 DEBUG Server:118 - Accepted connection from /127.0.0.1:41506
 Shutting down the server.
-2019-11-26 15:47:24 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:39606
-2019-11-26 15:47:25 INFO  Server:139 - Stopped accepting incoming connections.
-2019-11-26 15:47:25 INFO  Server:153 - Registered GET method handler on path /some/nested/path
-2019-11-26 15:47:25 INFO  Server:111 - Accepting incoming connections on port 7575
-2019-11-26 15:47:25 DEBUG Server:118 - Accepted connection from /127.0.0.1:39608
+2019-12-02 08:43:37 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:41506
+2019-12-02 08:43:38 INFO  Server:139 - Stopped accepting incoming connections.
+2019-12-02 08:43:38 INFO  Server:153 - Registered GET method handler on path /some/nested/path
+2019-12-02 08:43:38 INFO  Server:111 - Accepting incoming connections on port 7575
+2019-12-02 08:43:38 DEBUG Server:118 - Accepted connection from /127.0.0.1:41520
 Shutting down the server.
-2019-11-26 15:47:25 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:39608
-2019-11-26 15:47:26 INFO  Server:139 - Stopped accepting incoming connections.
+2019-12-02 08:43:38 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:41520
+2019-12-02 08:43:39 INFO  Server:139 - Stopped accepting incoming connections.
+2019-12-02 08:43:39 INFO  Server:153 - Registered GET method handler on path /some/path
+2019-12-02 08:43:39 INFO  Server:111 - Accepting incoming connections on port 7575
+2019-12-02 08:43:40 DEBUG Server:118 - Accepted connection from /127.0.0.1:41522
+2019-12-02 08:43:40 ERROR HttpRequestHandler:96 - Lost connection to /127.0.0.1:41522
+Shutting down the server.
+2019-12-02 08:43:41 INFO  Server:139 - Stopped accepting incoming connections.
 </pre>
 </span>
 </div>
@@ -137,7 +148,7 @@ Shutting down the server.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.4</a> at Nov 26, 2019, 3:47:49 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.4</a> at Dec 2, 2019, 8:44:04 AM</p>
 </div>
 </div>
 </body>
