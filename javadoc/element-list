@@ -1,6 +1,0 @@
-com.pyszkowski.http
-com.pyszkowski.http.exception
-com.pyszkowski.http.handler
-com.pyszkowski.http.handler.file
-com.pyszkowski.http.handler.mongo
-com.pyszkowski.http.util
